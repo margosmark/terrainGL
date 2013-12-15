@@ -81,8 +81,16 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="glew.h" />
+    <ClInclude Include="glut.h" />
+    <ClInclude Include="glxew.h" />
+    <ClInclude Include="GL\glew.h" />
+    <ClInclude Include="GL\glut.h" />
+    <ClInclude Include="GL\glxew.h" />
+    <ClInclude Include="GL\wglew.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="wglew.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="app.rc" />
@@ -97,6 +105,24 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="app.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="glut.def" />
+    <None Include="GL\glew32.dll">
+      <DeploymentContent>false</DeploymentContent>
+    </None>
+    <None Include="GL\glut.def" />
+    <None Include="GL\glut32.dll">
+      <DeploymentContent>false</DeploymentContent>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="GL\glew32.lib">
+      <DeploymentContent>false</DeploymentContent>
+    </Library>
+    <Library Include="GL\glut32.lib">
+      <DeploymentContent>false</DeploymentContent>
+    </Library>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
